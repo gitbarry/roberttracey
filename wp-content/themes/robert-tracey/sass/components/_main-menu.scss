@@ -1,0 +1,54 @@
+.main-menu_wrapper {
+  background: black;
+  border-bottom: 5px solid $gold;
+
+  li {
+    float: none;
+    display: inline-block;
+  }
+
+  a {
+    color: white;
+    display: inline-block;
+    margin: .5rem 1rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:visited,
+    &:active {
+      color: white;
+    }
+  }
+
+  .sub-menu {
+    background-color: $white;
+    text-align: left;
+    a {
+      color: black;
+        &:hover {
+          text-decoration: none;
+        }
+    }
+  }
+}
+
+.breadcrumb-wrapper {
+  background: $gold;
+  font-size: 1.2rem;
+  color: $black;
+    a {
+      text-transform: lowercase;
+      color: $black;
+        &:hover {
+          color: $black;
+          text-decoration: none;
+        }
+    }
+}
+
+#wprmenu_bar {
+  padding: 16px 16px;
+  height: 48px;
+}

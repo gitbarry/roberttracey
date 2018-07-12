@@ -1,0 +1,17 @@
+.grid-item {
+  border: 1px solid black;
+  text-align: center;
+
+  .grid-item_title {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .grid-item_title-link {
+    display: block;
+    background: black;
+    color: white;
+    padding: .5rem;
+  }
+}

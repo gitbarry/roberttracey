@@ -1,0 +1,20 @@
+.footer-top {
+  background: url("/wp-content/themes/robert-tracey/images/suit-bg.jpg") center center no-repeat $dark-grey;
+  background-size: cover;
+  padding: 4rem 0;
+  text-align: center;
+
+  h4 {
+    color: $gold;
+    text-shadow: 2px 2px $black;
+    font-size: 2rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 3rem;
+      }
+  }
+
+  p {
+    color: $gold;
+    text-shadow: 1px 1px $black;
+  }
+}

@@ -1,0 +1,32 @@
+// Search Form Block
+.block-search {
+  text-align: center;
+  margin: 1rem auto;
+
+  @include media-breakpoint-up(md){
+    margin: 0;
+    text-align: right;
+  }
+
+    @include media-breakpoint-up(lg){
+      text-align: right;
+    }
+
+    button {
+      @include goldButton();
+      border-radius: 0 0.25rem 0.25rem 0;
+      text-transform: none;
+    }
+}
+
+
+// Search Result Block
+.search-results-block {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+    h2 a {
+      @include goldText(1px 1px);
+    }
+}

@@ -1,0 +1,9 @@
+.full-product-item {
+  .full-product-item__image {
+    margin-bottom: 2rem;
+    border-bottom: 6px solid $gold;
+      @include media-breakpoint-up(lg){
+        margin-bottom: 0;
+      }
+  }
+}

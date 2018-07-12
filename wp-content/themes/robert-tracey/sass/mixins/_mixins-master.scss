@@ -1,0 +1,123 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin centerAll() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin boxButton() {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	@include media-breakpoint-up(sm) {
+		bottom: 25%;
+	}
+	@include media-breakpoint-up(sm) {
+		bottom: 15%;
+	}
+	@include media-breakpoint-up(lg) {
+		bottom: 20%;
+	}
+}
+
+@mixin boxHeading() {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+	border-top: 1px solid $gold;
+	border-bottom: 1px solid $gold;
+	display: inline-block;
+	margin-bottom: 1rem;
+	white-space: nowrap;
+	background: url(/wp-content/themes/robert-tracey/images/heading-bg.png) center center no-repeat;
+		a {
+			@include goldText(1px 1px);
+			padding: 0 .5em .1em;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		@include media-breakpoint-up(lg) {
+			top: 45%;
+		}
+}
+
+@mixin centerButton() {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+@mixin goldText($size) {
+	color: $gold;
+	text-shadow: $size $black;
+}
+
+@mixin goldButton() {
+	font-size: 1.1rem;
+  color: $black;
+  background: linear-gradient($gold, $dark-gold);
+	text-transform: uppercase;
+    &:hover {
+      background: linear-gradient($dark-gold, $dark-gold);
+    }
+}
+
+@mixin pipedHeading() {
+	@include goldText(1px 1px);
+	font-size: 2.5rem;
+	border-top: 1px solid $gold;
+	border-bottom: 1px solid $gold;
+	display: inline-block;
+	padding: 0 .5em .1em;
+	margin-bottom: 1rem;
+	white-space: nowrap;
+	background: url(/wp-content/themes/robert-tracey/images/heading-bg.png) center center no-repeat;
+		a:hover {
+			text-decoration: none;
+		}
+}
+
+
+@mixin imageToMono() {
+	transition: filter .5s ease-in-out;
+	-webkit-filter: grayscale(0);
+  filter: grayscale(0);
+		&:hover {
+			-webkit-filter: grayscale(60%);
+		  filter: grayscale(60%);
+		}
+}
