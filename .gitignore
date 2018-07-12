@@ -10,7 +10,7 @@ wp-content/w3tc-config
 wp-content/themes/twentyfifteen
 wp-content/themes/twentysixteen
 wp-content/themes/seventeen
-wp-content/themes/robert-tracey/node_modules/
+wp-content/themes/robert-tracey/node_modules
 advanced-cache.php
 index.php
 .DS_Store
