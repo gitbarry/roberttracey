@@ -104,6 +104,7 @@ if($category_level !=0) {
 
 	else:
 		echo "<h4 class='text-center'>We currently have no items in this section.</h4>";
+		echo '<p class="text-center"><a class="button button__gold" href="javascript:window.history.go(-1)">Go Back</a></p>';
 
 	endif;
 

@@ -62,9 +62,9 @@
 			'menu_id'        => 'primary-menu',
 		) );
 		?>
+	</nav>
 		</div>
 		</div>
-		</div>
-	</nav><!-- #site-navigation -->
+	</div><!-- #site-navigation -->
 
 	<div id="content" class="page-content">
